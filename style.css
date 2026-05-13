@@ -1,0 +1,27 @@
+.main-container {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.login-button {
+    -fx-background-color: #388E3C; /* Verde similar a Linux Mint */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+}
+
+.login-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.error-label {
+    -fx-text-fill: #d32f2f;
+}

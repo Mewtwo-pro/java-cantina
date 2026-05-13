@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<!-- La parte importante es fx:controller="LoginController" -->
+<VBox fx:controller="LoginController" alignment="CENTER" spacing="15.0" 
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+      styleClass="main-container" prefWidth="350" prefHeight="450">
+    
+    <padding>
+        <Insets top="20" right="40" bottom="20" left="40"/>
+    </padding>
+
+    <Label text="Bienvenido" styleClass="title-label" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    
+    <VBox spacing="5">
+        <Label text="Usuario:"/>
+        <TextField fx:id="txtUsuario" promptText="Ingrese su nombre"/>
+    </VBox>
+
+    <VBox spacing="5">
+        <Label text="Contraseña:"/>
+        <PasswordField fx:id="txtPassword" promptText="••••••••"/>
+    </VBox>
+
+    <!-- Este onAction buscará el método handleLogin() en LoginController.java -->
+    <Button text="Iniciar Sesión" onAction="#handleLogin" maxWidth="Infinity" 
+            style="-fx-background-color: #388E3C; -fx-text-fill: white; -fx-cursor: hand;"/>
+    
+    <Label fx:id="lblMensaje" style="-fx-text-fill: red;"/>
+</VBox>
